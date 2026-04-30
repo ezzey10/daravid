@@ -805,7 +805,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-size: 0.75rem;
-  color: rgba(245, 240, 232, 0.35);
+  color: var(--cream);
   letter-spacing: 0.05em;
 }
 footer a {
