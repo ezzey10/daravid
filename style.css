@@ -446,6 +446,9 @@ section {
   padding: 1.5rem;
 }
 .stat-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Cormorant Garamond", serif;
   font-size: 2.8rem;
   font-weight: 600;
@@ -453,7 +456,8 @@ section {
   backdrop-filter: blur(12px);
   background-color: rgba(65, 65, 65, 0.308);
   color: var(--dark);
-  line-height: 3;
+  border: 1px dashed var(--sand);
+  aspect-ratio: 1;
 }
 .stat-label {
   font-size: 0.72rem;
@@ -578,12 +582,14 @@ details {
   border-radius: 8px;
 }
 .odd {
-  border-top: 2px solid var(--muted);
-  border-right: 2px solid var(--muted);
+  /* border-top: 2px solid var(--muted);
+  border-right: 2px solid var(--muted); */
+  border: 2px solid var(--muted);
 }
 .even {
-  border-bottom: 2px solid var(--muted);
-  border-left: 2px solid var(--muted);
+  /* border-bottom: 2px solid var(--muted);
+  border-left: 2px solid var(--muted); */
+  border: 2px solid var(--muted);
 }
 .service-card:hover {
   background: var(--muted);
