@@ -487,6 +487,10 @@ section {
   justify-content: center;
   align-items: center;
 }
+.exp-meta a {
+  text-decoration: none;
+  color: inherit;
+}
 .exp-year {
   font-size: 0.72rem;
   color: var(--muted);
@@ -561,8 +565,8 @@ details {
 }
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 2rem;
   /* background: rgba(255,255,255,0.08);
       border: 1px solid rgba(255,255,255,0.08); */
 }
@@ -871,6 +875,9 @@ footer a {
   }
   .about-stats {
     grid-template-columns: 1fr 1fr;
+  }
+  .services-grid{
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
 }
 
